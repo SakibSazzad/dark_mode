@@ -1,0 +1,810 @@
+/* Color Variable section css start */
+:root{
+    --primarycolor: #ffece1;
+    --secondarycolor: #649483;
+    --thirdcolor: #dd7017;
+}
+body.darkmode{
+    --primarycolor: #191A19;
+    --secondarycolor: #D8E9A8;
+    --thirdcolor: #4E9F3D;
+}
+/* Color Variable section css End */
+/* -------------------Common css start------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: var(--secondarycolor);
+    display: inline-block;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+#nav .row{
+    align-items: center;
+}
+.text{
+    font-size: 19px;
+    color: var(--secondarycolor);
+}
+
+/* -------------------Common css End------------------- */
+
+/* -------------------nav css start------------------- */
+#nav{
+    background-color: var(--primarycolor);
+    box-shadow: 0px 1px 5px 4px rgba(146, 127, 116, 0.19);
+    z-index: 9;
+    position: relative;
+}
+#sidemenu{
+    position: fixed;
+    z-index: 9999999;
+    top: 136px;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    background: var(--thirdcolor);
+    margin-left: -15%;
+    transition: 0.8s;
+    overflow-y: auto;
+}
+#sidemenu.active{
+    margin-left: 0%;
+}
+#sidemenu ul li a{
+    font-size: 22px;
+    padding: 20px 40px;
+    text-transform: capitalize;
+}
+#nav .logo{
+    width: 10%;
+}
+#nav .menu{
+    width: 60%;
+}
+#nav .right_menu{
+    width: 30%;
+    
+}
+#nav .logo img{
+    width: 80px;
+}
+#nav .menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#nav .right_menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+#nav .menu ul li a{
+    font-size: 22px;
+    padding: 55px 20px;
+    text-transform: capitalize;
+    transition: 0.8s;
+}
+#nav .right_menu ul li a{
+    font-size: 22px;
+    font-weight: 700;
+    padding: 18px 9px;
+    text-transform: capitalize;
+}
+#nav .right_menu .ordermeal{
+    color: var(--primarycolor);
+    padding: 10px 18px;
+    background-color: var(--secondarycolor);
+    border-radius: 10px;
+}
+#nav .menu ul li a:hover {
+    color: var(--thirdcolor);
+}
+/* -------------------nav css End------------------- */
+
+/* -------------------banner section css start------------------- */
+#banner{
+    background-color: var(--primarycolor);
+    position: relative;
+    z-index: 1;
+}
+#banner .shape{
+    position: absolute;
+    z-index: -1;
+}
+#banner .shape1{
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 60%;
+}
+#banner .shape2{
+    bottom: 0;
+    right: 0;
+    width: 42%;
+}
+#banner .container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1440px;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+#banner .row .fishplate{
+    width: 60%;
+    justify-content: center;
+    align-content: center;
+    /* align-items: center; */
+}
+#banner .row .fishplate img{
+    width: 80%;
+    padding-top: 147px;
+    padding-left: -58px;
+}
+#banner .row .fishplate h5{
+    color: var(--secondarycolor);
+    font-weight: 700;
+    font-size: 19px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    text-align: center;
+    width: 80%;
+}
+#banner .row .fishplate p{
+    color: var(--secondarycolor);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 0px 78px 90px;
+    width: 80%;
+}
+#banner .row .heading{
+    width: 40%
+}
+#banner .row .heading h2{
+    color: var(--thirdcolor);
+    font-size: 80px;
+    font-weight: 700;
+    margin-top: 238px;
+    margin-bottom: 28px;
+}
+#banner .row .heading a{
+    color: var(--secondarycolor);
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 2px solid var(--secondarycolor);
+    padding: 13px 15px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+#banner .row .heading a:hover{
+    color: var(--primarycolor);
+    background-color: var(--secondarycolor);
+}
+#banner .row .heading .mealoption{
+    width: 100%;
+    height: 174px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px 34px;
+    background-color: var(--thirdcolor);
+    align-items: center;
+    margin-top: 75px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+#banner .row .heading .mealoption h5{
+    font-size: 17px;
+    /* text-align: center; */
+    /* justify-content: center; */
+    width: 8%;
+    color: var(--primarycolor);
+    transform: rotate(-90deg);
+    text-transform: uppercase;
+    /* padding: 5px; */
+}
+#banner .row .heading .mealoption .meals{
+    width: 21%;
+    height: 90%;
+}
+#banner .row .heading .mealoption .meals img{
+    width: 92px;
+    height: 92px;
+    margin: auto;
+    display: block;
+}
+#banner .row .heading .mealoption .meals p{
+    color: var(--primarycolor);
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+}
+#banner .row .heading .mealoption .arrow{
+    width: 8%;
+}
+#banner .row .heading .mealoption .arrow a{
+    color: var(--primarycolor);
+    background: none;
+    border: none;
+    font-size: 35px;
+    width: 100%;
+    padding: 0px 15px;
+}
+#banner .row .heading .mealoption .arrow a:hover{
+    color: var(--secondarycolor);
+}
+/* -------------------banner section css End------------------- */
+/* -------------------favorite section css start------------------- */
+#favorites{
+    background-color: var(--secondarycolor);
+    height: 1015px;
+}
+#favorites .fav_heading{
+    color: var(--primarycolor);
+    padding-top: 115px;
+}
+#favorites .fav_heading h2{
+    font-size: 80px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+#favorites .fav_heading p{
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+#favorites .container .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+#favorites .container .row .fav_info{
+    width: 32%;
+    height: 575px;
+    background-color: var(--primarycolor);
+    border-radius: 20px;
+    padding: 70px 60px;
+    margin-top: 72px;
+    margin-right: 12px;
+    text-align: center;
+}
+#favorites .container .row .fav_info img{
+    width: 100%;
+}
+#favorites .container .row .fav_info h4{
+    color: var(--secondarycolor);
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+#favorites .container .row .fav_info p{
+    color: var(--secondarycolor);
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding-top: 40px;
+}
+/* -------------------favorite section css End------------------- */
+/* -------------------content section css start------------------- */
+#content{
+    height: 910px;
+    background-color: var(--primarycolor);
+    position: relative;
+    z-index: 1;
+}
+#content .shape{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 450px;
+}
+#content .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+#content .row .content_one,
+#content .row .content_two{
+    width: 50%;
+}
+#content .row .content_one img{
+    margin-top: 115px;
+    margin-bottom: 115px;
+}
+#content .row .content_two{
+    margin-top: 185px;
+    margin-bottom: 115px;
+}
+#content .row .content_two h5{
+    color: var(--secondarycolor);
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#content .row .content_two h2{
+    color: var(--thirdcolor);
+    font-size: 80px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#content .row .content_two p{
+    color: var(--secondarycolor);
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#content .row .content_two img{
+    width: 280px;
+    height: 165px;
+    margin-right: 10px;
+    margin-top: 20px;
+    /* margin-bottom: 20px; */
+}
+#content .row .content_two a{
+    color: var(--primarycolor);
+    background-color: var(--secondarycolor);
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 16px;
+    margin-top: -50px;
+}
+#content .row .content_two .child2{
+    margin-left: 140px;
+}
+/* -------------------content section css End------------------- */
+/* -------------------recipe section css start------------------- */
+#recipe{
+    background-color: var(--primarycolor);
+    height: 910px;
+    position: relative;
+    z-index: 1;
+}
+#recipe .shape{
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+}
+#recipe .row .recipe_content{
+    width: 50%;
+}
+#recipe .row .recipe_img{
+    width: 50%;
+}
+#recipe .row .recipe_content h5{
+    color: var(--secondarycolor);
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 145px;
+}
+#recipe .row .recipe_content h2{
+    color: var(--thirdcolor);
+    font-size: 80px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#recipe .row .recipe_content .img{
+    width: 50%;
+    padding-top: 20px;
+}
+#recipe .row .recipe_content .img a{
+    color: var(--primarycolor);
+    background-color: var(--secondarycolor);
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 16px 20px;
+    margin-top: -30px;
+}
+#recipe .row .recipe_img{
+    padding: 115px 115px 130px 65px;
+}
+/* -------------------recipe section css End------------------- */
+/* -------------------our process section css start------------------- */
+#process{
+    background-color: var(--secondarycolor);
+    height: 825px;
+}
+#process h2{
+    color: var(--primarycolor);
+    font-size: 80px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-top: 125px;
+}
+#process h5{
+    color: var(--primarycolor);
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+#process .row .process_info1{
+    width: 28%;
+}
+#process .row .process_info2{
+    width: 8%;
+}
+#process .row .process_info3{
+    width: 28%;
+}
+#process .row .process_info4{
+    width: 8%;
+}
+#process .row .process_info5{
+    width: 28%;
+}
+#process .row .process_info{
+    height: 382px;
+    background-color: var(--primarycolor);
+    border-radius: 15px;
+    margin-top: 70px;
+    text-align: center;
+}
+#process .row .arrow{
+    color: var(--primarycolor);
+    font-size: 40px;
+    height: 382px;
+    display: block;
+    text-align: center;
+    background-color: var(--secondarycolor);
+    margin-top: 70px;
+    padding: 180px 0px;
+}
+#process .row .process_info h4{
+    color: var(--thirdcolor);
+    font-size: 29px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+    padding-top: 42px;
+}
+#process .row .process_info img{
+    padding-top: 70px;
+}
+#process .row .process_info p{
+    color: var(--thirdcolor);
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding-top: 60px;
+    padding-bottom: 42px;
+}
+/* -------------------our process section css End------------------- */
+/* -------------------meal plans section css start------------------- */
+#mealplans{
+    background-color: var(--primarycolor);
+    height: 900px;
+    position: relative;
+    z-index: 1;
+}
+#mealplans .shape{
+    position: absolute;
+    z-index: -1;
+    height: 900px;
+    right: 30%;
+    top: 0;
+    bottom: 0;
+
+}
+#mealplans .mealplans_info{
+    width: 50%;
+}
+#mealplans .mealplans_info h2{
+    color: var(--thirdcolor);
+    font-size: 90px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-top: 210px;
+}
+#mealplans .mealplans_info p{
+    color: var(--secondarycolor);
+    font-size: 19px;
+    font-weight: 400;
+    text-align: center;
+    margin-right: 30px;
+    padding-top: 40px;
+    padding-bottom: 36px;
+}
+#mealplans .mealplans_info a{
+    color: var(--secondarycolor);
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 2px solid var(--secondarycolor);
+    padding: 13px 15px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+#mealplans .mealplans_info a:hover{
+    color: var(--primarycolor);
+    background-color: var(--secondarycolor);
+}
+#mealplans .mealplans_img{
+    width: 50%;
+    margin-top: 80px;
+    text-align: right;
+}
+#mealplans .mealplans_img img{
+    display: block;
+    width: 100%;
+}
+#mealplans .mealplans_img i{
+    color: var(--primarycolor);
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+#mealplans .mealplans_img p{
+    color: var(--primarycolor);
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#mealplans::before {
+    position: absolute;
+    content: '';
+    width: 30%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--thirdcolor);
+    z-index: -1;
+    border-radius: 25px 0px 0px 25px;
+}
+/* -------------------meal plans section css End------------------- */
+/* -------------------what they say section css start------------------- */
+#say{
+    background-color: var(--secondarycolor);
+    height: 700px;
+}
+#say h2{
+    color: var(--primarycolor);
+    font-size: 80px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-top: 100px;
+    margin-left: 20px;
+}
+#say .row .say_info{
+    width: 30%;
+    /* border: 2px solid red; */
+    margin-top: 70px;
+    padding: 10px 20px;
+    text-align: center;
+}
+#say .row .say_info h5{
+    color: var(--primarycolor);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 25px;
+}
+#say .row .say_info p{
+    color: var(--primarycolor);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: lowercase;
+    padding-top: 10px;
+}
+#say .row .info2{
+    margin-left: 50px;
+}
+/* -------------------what they say section css End------------------- */
+/* -------------------made for you section css End------------------- */
+#made{
+    background-color: var(--primarycolor);
+    height: 1000px;
+    position: relative;
+    z-index: 1;
+}
+#made .shape1{
+    position: absolute;
+    z-index: -1;
+    height: 70%;
+    top: 0;
+    left: 0;
+}
+#made .shape2{
+    position: absolute;
+    z-index: -1;
+    height: 1000px;
+    right: 50px;
+}
+#made .row{
+    justify-content: space-between;
+    text-align: center;
+}
+#made .made_info{
+    width: 50%;
+    padding: 300px 0px 200px 0px;
+    text-align: center;
+}
+#made .made_img1{
+    width: 25%;
+    padding: 500px 0px 20px 0px;
+}
+#made .made_img1 img{
+    width: 130%;
+    display: block;
+    margin-left: -250px;
+}
+#made .made_img2{
+    width: 25%;
+    padding-top: 60px;
+}
+#made .made_img2 img{
+    width: 130%;
+    display: block;
+    margin-left: 170px;
+}
+#made .made_info h2{
+    color: var(--thirdcolor);
+    font-size: 80px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+#made .made_info p{
+    color: var(--secondarycolor);
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+#made .made_info a{
+    color: var(--secondarycolor);
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 2px solid var(--secondarycolor);
+    padding: 13px 15px;
+    border-radius: 10px;
+    margin-top: 30px;
+    transition: 0.6s;
+}
+#made .made_info a:hover{
+    color: var(--primarycolor);
+    background-color: var(--secondarycolor);
+}
+/* -------------------made for you section css End------------------- */
+/* -------------------footer section css End------------------- */
+#footer{
+    background-color: var(--secondarycolor);
+    /* height: 678px; */
+}
+#footer .footer_info{
+    width: 25%;
+    margin-top: 184px;
+}
+#footer .footer_info h3{
+    color: var(--primarycolor);
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+#footer .footer_info a{
+    color: var(--primarycolor);
+    display: block;
+    padding: 7px 0px;
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+#footer .footer_info label{
+    color: var(--primarycolor);
+    padding: 7px 0px;
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+#footer .footer_info input{
+    width: 280px;
+    height: 35px;
+    color: var(--primarycolor);
+    background-color: var(--secondarycolor);
+    border: 3px solid var(--primarycolor);
+    border-radius: 10px;
+}
+#footer .join button{
+    background-color: var(--primarycolor);
+    color: var(--secondarycolor);
+    cursor: pointer;
+    padding: 7px 7px;
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+}
+#footer .registration{
+    width: 100%;
+    height: 200px;
+    margin-top: 30px;
+    text-align: center;
+    position: relative;
+}
+#footer .registration h5{
+    color: var(--primarycolor);
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+#footer .registration input{
+    width: 70%;
+    height: 25%;
+    color: var(--primarycolor);
+    background-color: var(--secondarycolor);
+    border: 3px solid var(--primarycolor);
+    border-radius: 10px;
+    padding: 20px 20px;
+}
+#footer .registration i{
+    position: absolute;
+    left: 82%;
+    top: 76%;
+    cursor: pointer;
+}
+#footer .registration button{
+    background-color: var(--primarycolor);
+    color: var(--secondarycolor);
+    cursor: pointer;
+    padding: 9px 9px;
+    font-size: 21px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+}
+#footer .copyright{
+    width: 100%;
+    color: var(--primarycolor);
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-top: 140px;
+}
+#footer .copyright .copy{
+    width: 70%;
+}
+#footer .copyright .social{
+    width: 30%;
+    text-align: right;
+}
+#footer .copyright i{
+    color: var(--primarycolor);
+}
+/* -------------------footer section css End------------------- */
