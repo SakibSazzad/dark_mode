@@ -42,13 +42,42 @@ a{
 
 /* -------------------Common css End------------------- */
 
+/* Preloader section css start */
+#preloader{
+    position: fixed;
+    z-index: 999999999999;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Preloader section css End */
+
 /* -------------------nav css start------------------- */
 #nav{
     background-color: var(--primarycolor);
     box-shadow: 0px 1px 5px 4px rgba(146, 127, 116, 0.19);
-    z-index: 9;
-    position: relative;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 1s;
 }
+#nav.active{
+    position: fixed;
+    animation: nav_fixed 1s;
+}
+
+@keyframes nav_fixed {
+    from{
+        top: -100px;
+    }to{
+        top: 0;
+    }
+}
+
 #sidemenu{
     position: fixed;
     z-index: 9999999;

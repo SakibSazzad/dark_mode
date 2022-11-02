@@ -12,9 +12,12 @@
     <link rel="stylesheet" href="CSS/style.css">
     <title>Meal Plan</title>
 </head>
-<body class="">
+<body>
     <!-- nav section start -->
-    <nav id="nav"> 
+    <nav id="nav">
+        <div id="preloader">
+            <img src="img/preloader.gif">
+        </div>
         <div id="sidemenu">
             <ul>
                <li><a href="#">Home</a></li>
@@ -332,7 +335,7 @@
                 <h5>Registration</h5>
                 <input type="text" placeholder="Enter Your E-mail Address"><br><br>
                 <input type="password" id="password" placeholder="Enter Your Password"><br><br>
-                <i class="fa-solid fa-eye-slash" id="password_eye"></i>
+                <i class="fa-solid fa-eye" id="password_eye"></i>
                 <button>submit</button>
             </div>
             <div class="copyright">
@@ -350,6 +353,10 @@
         </div>    
     </section>
     <!-- footer section End -->
+
+    <!-- jquery min file section start -->
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <!-- jquery min file section End -->
 
     <!-- Main JavaScript Link section start -->
     <script src="js/app.js"></script>
